@@ -1,1 +1,1 @@
-from . import command_for_groups
+from . import commands_for_groups
