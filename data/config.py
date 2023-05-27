@@ -1,0 +1,2 @@
+ADMINS = []
+TOKEN = []
