@@ -1,2 +1,0 @@
-ADMINS = []
-TOKEN = ''
