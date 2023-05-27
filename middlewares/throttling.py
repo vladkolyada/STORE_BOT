@@ -60,7 +60,7 @@ class ThrottlingMiddleware(BaseMiddleware):
         else:
             key = f"{self.prefix}_message"
 
-        # Calculate how many time is left till the block ends
+        # Calculate how many times is left till the block ends
         delta = throttled.rate - throttled.delta
 
         # Prevent flooding
