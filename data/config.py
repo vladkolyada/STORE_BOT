@@ -1,2 +1,2 @@
 ADMINS = []
-TOKEN = []
+TOKEN = ''
