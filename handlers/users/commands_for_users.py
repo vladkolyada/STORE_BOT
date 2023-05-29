@@ -7,7 +7,7 @@ from aiogram.utils.exceptions import MessageTextIsEmpty
 from utils.misc.throttling import rate_limit
 from loader import dp
 
-basket = ["Apple", "Potato", "Tomato"]
+basket = []
 
 
 @rate_limit(limit=5, key='/start')
