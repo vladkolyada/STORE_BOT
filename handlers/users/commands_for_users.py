@@ -19,11 +19,13 @@ async def start_command(message: types.Message):
                          reply_markup=get_contact)
 
 
+@rate_limit(limit=5, key='/help')
 @dp.message_handler(CommandHelp())
 async def help_command(message: types.Message):
     await message.answer(text='help')
 
 
+@rate_limit(limit=5, key='/basket')
 @dp.message_handler(commands='basket')
 async def basket_command(message: types.Message):
     try:
