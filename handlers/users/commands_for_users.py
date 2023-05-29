@@ -2,12 +2,15 @@ from aiogram import types
 import random
 from aiogram.dispatcher.filters.builtin import CommandStart, CommandHelp
 from keyboards.default.first_keyboards import get_contact
-from utils.misc.throttling import rate_limit
-from handlers.users.functions_of_the_basket import basket
+from aiogram.utils.exceptions import MessageTextIsEmpty
 
+from utils.misc.throttling import rate_limit
 from loader import dp
 
+basket = ["Apple", "Potato", "Tomato"]
 
+
+@rate_limit(limit=5, key='/start')
 @dp.message_handler(CommandStart())
 async def start_command(message: types.Message):
     random_greetings = random.choice(['Hello.', 'Hi!', 'Welcome'])  # Why not?
@@ -18,15 +21,15 @@ async def start_command(message: types.Message):
 
 @dp.message_handler(CommandHelp())
 async def help_command(message: types.Message):
-    pass
+    await message.answer(text='help')
 
 
-@dp.message_handler(commands=['/basket'])
+@dp.message_handler(commands='basket')
 async def basket_command(message: types.Message):
-    if basket is None:
-        await message.answer(text='The basket is clean. Put your products here.')
-    else:
+    try:
         await message.answer(text='\n\n'.join(basket))
+    except MessageTextIsEmpty:
+        await message.answer(text='The basket is clean. Put your products here.')
 
 
 
