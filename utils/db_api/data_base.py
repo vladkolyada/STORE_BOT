@@ -29,7 +29,7 @@ class DataBase:
             """
         )
 
-    async def add_new_user_to_table(self, id, phone_number):
+    async def add_new_user_to_the_table(self, id, phone_number):
         sql = "INSERT INTO users(id, phone_number) " \
               "VALUES($1, $2);"
         try:
