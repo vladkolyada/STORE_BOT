@@ -29,3 +29,12 @@ class DataBase:
             """
         )
 
+    async def add_new_user_to_table(self, id, phone_number):
+        sql = "INSERT INTO users(id, phone_number) " \
+              "VALUES($1, $2);"
+        try:
+            await self.pool.execute(sql, id, phone_number)
+        except asyncpg.exceptions.UniqueViolationError:
+            pass
+
+
