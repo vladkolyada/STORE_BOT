@@ -5,11 +5,6 @@ get_contact = ReplyKeyboardMarkup(keyboard=[
     [
         KeyboardButton('Give my own phone number', request_contact=True)
     ]
-])
+], resize_keyboard=True)
 
-fruits_or_vegetables = ReplyKeyboardMarkup(keyboard=[
-    [
-        KeyboardButton('Fruits'),
-        KeyboardButton('Vegetables')
-    ]
-])
+
