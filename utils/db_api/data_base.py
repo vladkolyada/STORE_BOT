@@ -21,8 +21,7 @@ class DataBase:
     async def create_table_users(self):
         await self.pool.execute(
             """
-            CREATE TABLE IF NOT EXISTS users_of_SB 
-            (
+            CREATE TABLE IF NOT EXISTS users(
             id BIGINT NOT NULL PRIMARY KEY, 
             phone_number VARCHAR(255) NOT NULL
             );
