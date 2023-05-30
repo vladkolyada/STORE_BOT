@@ -1,4 +1,4 @@
-def add_product_to__basket(basket: list, product: str):
+def add_product_to_basket(basket: list, product: str):
     basket.append(product)
 
 
