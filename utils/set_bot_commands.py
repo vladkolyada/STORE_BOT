@@ -6,6 +6,8 @@ async def set_default_commands(dp):
         [
             types.BotCommand('start', 'Start the bot'),
             types.BotCommand('help', "Get all commands"),
-            types.BotCommand('basket', "Check data of basket")
+            types.BotCommand('basket', "Check data of basket"
+                                       "(works only after passing authorization by entering "
+                                       "the /start command)")
         ]
     )
