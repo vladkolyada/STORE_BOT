@@ -39,3 +39,4 @@ back_to_sorts_of_apple_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
         InlineKeyboardButton('Back', callback_data='/fruits/apple')
     ]
 ])
+
