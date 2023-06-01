@@ -7,8 +7,7 @@ from keyboards.default.first_keyboards import get_contact
 from utils.misc.throttling import rate_limit
 from loader import dp
 from states.steps import StatesForBot
-
-basket = []
+from .functions_for_basket import check_data
 
 
 @rate_limit(limit=5, key='/start')
@@ -23,14 +22,18 @@ async def start_command(message: types.Message):
 @rate_limit(limit=5, key='/help')
 @dp.message_handler(CommandHelp())
 async def help_command(message: types.Message):
-    await message.answer(text='help')
+    await message.answer(text='/start - Start the bot\n'
+                              '/help - Get all commands\n'
+                              '/basket - Check data of basket '
+                              '(works only after passing authorization by entering the /start command)'
+                         )
 
 
 @rate_limit(limit=5, key='/basket')
 @dp.message_handler(commands='basket', state=StatesForBot.AfterAuthorization)
 async def basket_command(message: types.Message):
     try:
-        await message.answer(text='\n\n'.join(basket))
+        await check_data(message)
     except MessageTextIsEmpty:
         await message.answer(text='The basket is clean. Put your products here.')
 
