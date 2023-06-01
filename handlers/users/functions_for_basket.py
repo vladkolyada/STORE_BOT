@@ -1,10 +1,20 @@
-def add_product_to_basket(basket: list, product: str):
+basket = []
+
+
+async def add_product_to_basket(product: str):
+    global basket
     basket.append(product)
 
 
-def delete_product_from_basket(basket: list, product: str):
+async def delete_product_from_basket(product: str):
+    global basket
     basket.remove(product)
 
 
-def clear_all_from_basket(basket: list):
+async def clear_all_from_basket():
+    global basket
     basket.clear()
+
+
+async def check_data(message):
+    await message.answer(text='\n\n'.join(basket))
