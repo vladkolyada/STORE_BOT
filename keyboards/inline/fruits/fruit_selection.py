@@ -1,18 +1,41 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
-type_of_fruits = InlineKeyboardMarkup(inline_keyboard=[
+types_of_fruits = InlineKeyboardMarkup(inline_keyboard=[
     [
-        InlineKeyboardButton('Apple 🍏', callback_data='fruit/apple')
+        InlineKeyboardButton('Apple 🍏', callback_data='/fruits/apple')
     ],
     [
-        InlineKeyboardButton('Watermelon 🍉', callback_data='fruit/watermelon')
+        InlineKeyboardButton('Watermelon 🍉', callback_data='/fruits/watermelon')
     ],
     [
-        InlineKeyboardButton('Grape 🍇', callback_data='fruit/grape')
+        InlineKeyboardButton('Grape 🍇', callback_data='/fruits/grape')
     ],
     [
-        InlineKeyboardButton('Banana 🍌', callback_data='fruit/banana')
+        InlineKeyboardButton('Banana 🍌', callback_data='/fruits/banana')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/back')
     ]
 ])
 
+sorts_of_apple = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Golden Delicious', callback_data='/fruits/apple/golden_delicious')
+    ],
+    [
+        InlineKeyboardButton('Idared', callback_data='/fruits/apple/idared')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits')
+    ]
+])
+
+back_to_sorts_of_apple_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/apple/golden_delicious/buy_golden_delicious')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/apple')
+    ]
+])
