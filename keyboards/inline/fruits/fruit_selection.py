@@ -40,3 +40,23 @@ back_to_sorts_of_apple_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
+back_to_sorts_of_apple_or_buy_idared = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/apple/idared/buy_idared')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/apple')
+    ]
+])
+
+sorts_of_watermelon = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Arsenal', callback_data='/fruits/watermelon/arsenal')
+    ],
+    [
+        InlineKeyboardButton('Sensei', callback_data='/fruits/watermelon/sensei')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits')
+    ]
+])
