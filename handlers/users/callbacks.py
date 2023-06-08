@@ -3,7 +3,8 @@ from aiogram import types
 
 from loader import dp
 from states.steps import StatesForBot
-from keyboards.inline.fruits.fruit_selection import types_of_fruits, sorts_of_apple, back_to_sorts_of_apple_or_buy_gd
+from keyboards.inline.fruits.fruit_selection import types_of_fruits, sorts_of_apple, back_to_sorts_of_apple_or_buy_gd, \
+    back_to_sorts_of_apple_or_buy_idared, sorts_of_watermelon
 from keyboards.inline.vegetables.vegetable_selection import types_of_vegetables
 from keyboards.inline.default_keyboard import fruits_or_vegetables
 
@@ -35,10 +36,20 @@ async def fruit_or_vegetables(callback: types.CallbackQuery):
         await callback.message.delete()
         await callback.message.answer_photo(photo=open(str(os.path.abspath('idared.jpg')), 'rb'),
                                             caption='Apple sort - Idared\n'
-                                                    'Price per kilo: $1.00')
+                                                    'Price per kilo: $1.00',
+                                            reply_markup=back_to_sorts_of_apple_or_buy_idared)
+    elif callback.data == '/fruits/watermelon':
+        await callback.message.delete()
+        await callback.message.answer(text='Choose apple sort.',
+                                      reply_markup=sorts_of_watermelon)
+    elif callback.data == '/fruits/watermelon/arsenal':
+        await callback.message.delete()
+        await callback.message.answer_photo(photo=open(str(os.path.abspath('arsenal.jpg')), 'rb'),
+                                            caption='Watermelon sort - Arsenal\n'
+                                                    'Price per kilo: $0.55')
     elif callback.data == '/back':
         await callback.message.delete()
-        await callback.message.answer(text='Go shopping! Choose type of product.',
+        await callback.message.answer(text='Choose type of product.',
                                       reply_markup=fruits_or_vegetables)
 
 
