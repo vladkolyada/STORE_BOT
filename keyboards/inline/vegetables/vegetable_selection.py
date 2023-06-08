@@ -13,6 +13,9 @@ types_of_vegetables = InlineKeyboardMarkup(inline_keyboard=[
     ],
     [
         InlineKeyboardButton('Carrot 🥕', callback_data='/vegetable/banana')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/back')
     ]
 ])
 
