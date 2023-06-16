@@ -20,7 +20,7 @@ async def start_command(message: types.Message):
 
 
 @rate_limit(limit=5, key='/help')
-@dp.message_handler(CommandHelp())
+@dp.message_handler(CommandHelp(), state=StatesForBot.AfterAuthorization)
 async def help_command(message: types.Message):
     await message.answer(text='/start - Start the bot\n'
                               '/help - Get all commands\n'
