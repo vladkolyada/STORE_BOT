@@ -60,3 +60,89 @@ sorts_of_watermelon = InlineKeyboardMarkup(inline_keyboard=[
         InlineKeyboardButton('Back', callback_data='/fruits')
     ]
 ])
+
+
+back_to_sorts_of_watermelon_or_buy_arsenal = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/watermelon/arsenal/buy_arsenal')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/watermelon')
+    ]
+])
+
+
+back_to_sorts_of_watermelon_or_buy_sensei = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/watermelon/sensei/buy_sensei')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/watermelon')
+    ]
+])
+
+
+sorts_of_grape = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Olymp', callback_data='/fruits/grape/olymp')
+    ],
+    [
+        InlineKeyboardButton('Bianca', callback_data='/fruits/grape/bianca')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits')
+    ]
+])
+
+
+back_to_sorts_of_grape_or_buy_olymp = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/grape/olymp/buy_olymp')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/grape')
+    ]
+])
+
+
+back_to_sorts_of_grape_or_buy_bianca = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/grape/bianca/buy_bianca')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/grape')
+    ]
+])
+
+
+sorts_of_banana = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Cavendish', callback_data='/fruits/banana/cavendish')
+    ],
+    [
+        InlineKeyboardButton('Morado', callback_data='/fruits/banana/morado')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits')
+    ]
+])
+
+
+back_to_sorts_of_banana_or_buy_cavendish = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/banana/cavendish/buy_cavendish')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/banana')
+    ]
+])
+
+
+back_to_sorts_of_banana_or_buy_morado = InlineKeyboardMarkup(inline_keyboard=[
+    [
+        InlineKeyboardButton('Buy', callback_data='/fruits/banana/morado/buy_morado')
+    ],
+    [
+        InlineKeyboardButton('Back', callback_data='/fruits/banana')
+    ]
+])
