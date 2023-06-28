@@ -1,4 +1,4 @@
-from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemove
 
 
 get_contact = ReplyKeyboardMarkup(keyboard=[
@@ -7,4 +7,4 @@ get_contact = ReplyKeyboardMarkup(keyboard=[
     ]
 ], resize_keyboard=True)
 
-
+remove_kb = ReplyKeyboardRemove()
