@@ -1,13 +1,11 @@
 import random
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart, CommandHelp
-from aiogram.utils.exceptions import MessageTextIsEmpty
 
-from keyboards.default.first_keyboards import get_contact
+from keyboards.default.default_keyboards import get_contact
 from utils.misc.throttling import rate_limit
 from loader import dp
 from states.steps import StatesForBot
-from .functions_for_basket import check_data
 
 
 @rate_limit(limit=5, key='/start')
@@ -27,15 +25,4 @@ async def help_command(message: types.Message):
                               '/basket - Check data of basket '
                               '(works only after passing authorization by entering the /start command)'
                          )
-
-
-@rate_limit(limit=5, key='/basket')
-@dp.message_handler(commands='basket', state=StatesForBot.AfterAuthorization)
-async def basket_command(message: types.Message):
-    try:
-        await check_data(message)
-    except MessageTextIsEmpty:
-        await message.answer(text='The basket is clean. Put your products here.')
-
-
 
