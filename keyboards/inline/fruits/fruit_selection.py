@@ -19,7 +19,8 @@ types_of_fruits = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-sorts_of_apple = InlineKeyboardMarkup(inline_keyboard=[
+
+types_of_apples = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Golden Delicious', callback_data='/fruits/apple/golden_delicious')
     ],
@@ -31,7 +32,7 @@ sorts_of_apple = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-back_to_sorts_of_apple_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_apples_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/apple/golden_delicious/buy_golden_delicious')
     ],
@@ -40,7 +41,7 @@ back_to_sorts_of_apple_or_buy_gd = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-back_to_sorts_of_apple_or_buy_idared = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_apples_or_buy_idared = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/apple/idared/buy_idared')
     ],
@@ -49,7 +50,8 @@ back_to_sorts_of_apple_or_buy_idared = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-sorts_of_watermelon = InlineKeyboardMarkup(inline_keyboard=[
+
+types_of_watermelons = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Arsenal', callback_data='/fruits/watermelon/arsenal')
     ],
@@ -62,7 +64,7 @@ sorts_of_watermelon = InlineKeyboardMarkup(inline_keyboard=[
 ])
 
 
-back_to_sorts_of_watermelon_or_buy_arsenal = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_watermelons_or_buy_arsenal = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/watermelon/arsenal/buy_arsenal')
     ],
@@ -72,7 +74,7 @@ back_to_sorts_of_watermelon_or_buy_arsenal = InlineKeyboardMarkup(inline_keyboar
 ])
 
 
-back_to_sorts_of_watermelon_or_buy_sensei = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_watermelons_or_buy_sensei = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/watermelon/sensei/buy_sensei')
     ],
@@ -82,7 +84,7 @@ back_to_sorts_of_watermelon_or_buy_sensei = InlineKeyboardMarkup(inline_keyboard
 ])
 
 
-sorts_of_grape = InlineKeyboardMarkup(inline_keyboard=[
+types_of_grapes = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Olymp', callback_data='/fruits/grape/olymp')
     ],
@@ -94,8 +96,7 @@ sorts_of_grape = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-
-back_to_sorts_of_grape_or_buy_olymp = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_grapes_or_buy_olymp = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/grape/olymp/buy_olymp')
     ],
@@ -104,8 +105,7 @@ back_to_sorts_of_grape_or_buy_olymp = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-
-back_to_sorts_of_grape_or_buy_bianca = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_grapes_or_buy_bianca = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/grape/bianca/buy_bianca')
     ],
@@ -115,7 +115,7 @@ back_to_sorts_of_grape_or_buy_bianca = InlineKeyboardMarkup(inline_keyboard=[
 ])
 
 
-sorts_of_banana = InlineKeyboardMarkup(inline_keyboard=[
+types_of_bananas = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Cavendish', callback_data='/fruits/banana/cavendish')
     ],
@@ -127,8 +127,7 @@ sorts_of_banana = InlineKeyboardMarkup(inline_keyboard=[
     ]
 ])
 
-
-back_to_sorts_of_banana_or_buy_cavendish = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_bananas_or_buy_cavendish = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/banana/cavendish/buy_cavendish')
     ],
@@ -137,8 +136,7 @@ back_to_sorts_of_banana_or_buy_cavendish = InlineKeyboardMarkup(inline_keyboard=
     ]
 ])
 
-
-back_to_sorts_of_banana_or_buy_morado = InlineKeyboardMarkup(inline_keyboard=[
+back_to_types_of_bananas_or_buy_morado = InlineKeyboardMarkup(inline_keyboard=[
     [
         InlineKeyboardButton('Buy', callback_data='/fruits/banana/morado/buy_morado')
     ],

@@ -2,6 +2,20 @@ data/config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
+handlers/__pycache__/
+handlers/errors/__pycache__/
+handlers/groups/__pycache__/
+handlers/users/__pycache__/
+keyboards/__pycache__/
+keyboards/default/__pycache__/
+keyboards/inline/__pycache__/
+keyboards/inline/fruits/__pycache__/
+keyboards/inline/vegetables/__pycache__/
+middlewares/__pycache__/
+states/__pycache__/
+utils/__pycache__/
+utils/db_api/__pycache__/
+utils/misc/__pycache__/
 *.py[cod]
 *$py.class
 .idea/
